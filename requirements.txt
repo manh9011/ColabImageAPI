@@ -1,0 +1,17 @@
+# =============================================================================
+# Dependencies for Multi-Model Colab API Server (stable-diffusion.cpp)
+# Requires Python >= 3.12 (required by google-colab-cli)
+# =============================================================================
+
+# FastAPI Web Framework & ASGI Server
+fastapi>=0.110.0
+uvicorn[standard]>=0.28.0
+pydantic>=2.6.0
+
+# HTTP Client & Keyring Token Management
+requests>=2.31.0
+keyring>=24.0.0
+
+# Google Colab CLI (Installing dev version from official GitHub is recommended for latest patches)
+# Install: pip install "git+https://github.com/googlecolab/google-colab-cli.git"
+google-colab-cli>=0.8.0

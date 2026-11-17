@@ -1,0 +1,32 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+python_embed/
+
+# Generated outputs
+outputs/*
+!outputs/.gitkeep
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE & Editor settings
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Temporary files
+*.tmp
+*.log
+colab_windows_shim.py
+*_bootstrap.py
