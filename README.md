@@ -85,7 +85,7 @@ ColabImageAPI/
 - **Python Version:** Requires `>= 3.12` (mandated by `google-colab-cli`).
 - **Automatic Environment Setup (`.venv`):**
   - **Method 1 (Dedicated Setup):**
-    - Windows: Double-click [setup_venv.bat](file:///K:/Projects/JavaScript/ColabImageAPI/setup_venv.bat).
+    - Windows: Double-click [setup_venv.bat](setup_venv.bat).
     - Linux / macOS: Run `chmod +x *.sh && ./setup_venv.sh`.
   - **Method 2 (Smart 1-Click Launch):**
     - Simply run any `run_*` script (`.bat` or `.sh`) directly. The script will **automatically verify and create the `.venv`** if it does not already exist!
@@ -103,9 +103,9 @@ ColabImageAPI/
 ### Step 1: Start your desired model server
 
 #### On Windows:
-- **Z-Image-Turbo (Ultra-fast 8 steps):** Double-click [run_zimage_colab_api.bat](file:///K:/Projects/JavaScript/ColabImageAPI/run_zimage_colab_api.bat)
-- **Qwen-Image-2.1 (High detail):** Double-click [run_qwen_colab_api.bat](file:///K:/Projects/JavaScript/ColabImageAPI/run_qwen_colab_api.bat)
-- **MiniMax H3-Image (6 steps + Image Editing):** Double-click [run_minimax_h3_colab_api.bat](file:///K:/Projects/JavaScript/ColabImageAPI/run_minimax_h3_colab_api.bat)
+- **Z-Image-Turbo (Ultra-fast 8 steps):** Double-click [run_zimage_colab_api.bat](run_zimage_colab_api.bat)
+- **Qwen-Image-2.1 (High detail):** Double-click [run_qwen_colab_api.bat](run_qwen_colab_api.bat)
+- **MiniMax H3-Image (6 steps + Image Editing):** Double-click [run_minimax_h3_colab_api.bat](run_minimax_h3_colab_api.bat)
 
 #### On Linux / macOS:
 ```bash
@@ -212,9 +212,9 @@ Drop-in compatible with official OpenAI SDKs, LangChain, and third-party WebUIs.
 ## 7. Testing & Verification (Batch / curl / PowerShell)
 
 ### Method 1: Using provided test scripts (Recommended)
-- Test Z-Image: Double-click [test_generate_zimage.bat](file:///K:/Projects/JavaScript/ColabImageAPI/test_generate_zimage.bat)
-- Test Qwen 2.1: Double-click [test_generate_qwen.bat](file:///K:/Projects/JavaScript/ColabImageAPI/test_generate_qwen.bat)
-- Test MiniMax H3: Double-click [test_generate_minimax.bat](file:///K:/Projects/JavaScript/ColabImageAPI/test_generate_minimax.bat)
+- Test Z-Image: Double-click [test_generate_zimage.bat](test_generate_zimage.bat)
+- Test Qwen 2.1: Double-click [test_generate_qwen.bat](test_generate_qwen.bat)
+- Test MiniMax H3: Double-click [test_generate_minimax.bat](test_generate_minimax.bat)
 
 ### Method 2: Testing with `curl`
 
@@ -245,7 +245,7 @@ curl -X POST "http://127.0.0.1:2506/api/generate" ^
 
 ### 🔴 Switching Google Colab Accounts when Quota is Exhausted
 When your current Google account reaches its daily free GPU quota on Google Colab (resulting in `503 Service Unavailable` or `412 TooManyAssignments`):
-1. Double-click [logout.bat](file:///K:/Projects/JavaScript/ColabImageAPI/logout.bat) (or run `./logout.sh` on Linux / macOS).
+1. Double-click [logout.bat](logout.bat) (or run `./logout.sh` on Linux / macOS).
 2. The script will delete the stored OAuth token from the system keyring.
 3. Re-run your desired model `.bat` or `.sh` script (`run_zimage_colab_api.bat`, `run_qwen_colab_api.bat`, or `run_minimax_h3_colab_api.bat`).
 4. Your browser will reopen to let you select another Google account that has remaining free GPU quota.
