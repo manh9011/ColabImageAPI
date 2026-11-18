@@ -35,6 +35,7 @@ from pathlib import Path
 from typing import Dict, List, Literal, Optional, Tuple
 
 from fastapi import FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse, JSONResponse
 from pydantic import BaseModel, Field
 
@@ -1010,6 +1011,12 @@ app = FastAPI(
     ),
     version="2.0.0",
     lifespan=lifespan,
+)
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 
